@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", serif;
+  
+}
+
+body{
+  background-color: rgb(41, 40, 40);
+  
+}
+
+.par{
+  margin-top: 4em;
+  position: relative;
+  padding: 4em;
+  max-width: 100%;
+  display: grid;
+  grid-gap: 3em;
+  grid-template-columns: repeat(2,35em);
+  grid-template-rows: repeat(2,2fr);
+}
+
+header{
+  background-color: brown;
+  display: flex;
+  padding: 27px 60px;
+  justify-content: space-between;
+  text-align:center;
+  max-width: 100%;
+}
+
+
+.nameL{
+  color: white;
+  font-weight: bold;
+}
+
+
+.navbar li a{
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 2em;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.con{
+  align-items: center; 
+  justify-items: center;
+}
+
+.menU{
+  color: gold;
+  text-align: center;
+  margin-top: 2em;
+  padding: 0.4em;
+  border-bottom: 2px solid gold;
+}
+
+
+@media (max-width: 1199px){
+  .par{
+    grid-template-columns: repeat(2,33em);
+    grid-template-rows: repeat(2,2fr);
+  }
+}
+
+@media (max-width: 1154px){
+  .par{
+    grid-template-columns: repeat(2,30em);
+    grid-template-rows: repeat(2,2fr);
+  }
+}
+
+@media (max-width: 1054px){
+  .par{
+    grid-template-columns: repeat(2,28em);
+    grid-template-rows: repeat(2,2fr);
+  }
+}
+
+
+@media (max-width: 989px){
+  .par{
+    grid-template-columns: repeat(2,26em);
+    grid-template-rows: repeat(2,2fr);
+  }
+}
+
+
+@media (max-width: 934px){
+  .par{
+    grid-template-columns: repeat(2,24em);
+    grid-template-rows: repeat(2,2fr);
+  }
+}
+
+@media (max-width: 870px){
+  .par{
+    grid-template-columns: repeat(2,22em);
+    grid-template-rows: repeat(2,2fr);
+  }
+}
+
+@media (max-width: 806px){
+  .par{
+    grid-template-columns: repeat(2,20em);
+    grid-template-rows: repeat(2,2fr);
+  }
+}
+
+@media (max-width: 746px){
+  .par{
+    grid-template-columns: repeat(2,18em);
+    grid-template-rows: repeat(2,2fr);
+  }
+}
+
+@media (max-width: 694px){
+  .par{
+    grid-template-columns: repeat(2,16em);
+    grid-template-rows: repeat(2,2fr);
+  }
+}
+
+@media (max-width: 650px){
+  .par{
+    grid-template-columns: repeat(1,33em);
+    grid-template-rows: repeat(2,2fr);
+  }
+}
+
+@media (max-width: 602px){
+  .par{
+    grid-template-columns: repeat(1,30em);
+    grid-template-rows: repeat(2,2fr);
+  }
+  .nameL{
+    font-size: 5rem;
+    margin-bottom: 1.5em;
+  }
+
+  .navbar li a{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  header{
+    display: block;
+  }
+
+  .menU{
+    font-size: 2.5rem;
+  }
+
+  .prz{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 522px){
+  .par{
+    grid-template-columns: repeat(1,26em);
+    grid-template-rows: repeat(2,2fr);
+  }
+}
+
+@media (max-width: 466px){
+  .par{
+    grid-template-columns: repeat(1,23em);
+    grid-template-rows: repeat(2,2fr);
+  }
+}
+
+@media (max-width: 412px){
+  .par{
+    grid-template-columns: repeat(1,19em);
+    grid-template-rows: repeat(2,2fr);
+  }
+
+  .navbar li a{
+ 
+    margin-left: 0.7em;
+  
+  }
+}

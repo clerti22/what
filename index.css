@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Montserrat", serif;
+  color: white;
+}
+
+body{
+  background-color: brown;
+}
+
+.par{
+  margin-top: 4em;
+  position: relative;
+  padding: 2em;
+  max-width: 100%;
+}
+
+header{
+  margin: 0;
+  display: flex;
+  padding: 10px 60px;
+  justify-content: space-between;
+  text-align:center;
+  max-width: 100%;
+}
+
+
+.nameL{
+  color: white;
+  font-weight: bold;
+}
+
+
+.navbar li{
+  display: inline-block;
+  margin-right: 2em;
+  color: white;
+  cursor: pointer;
+  
+}
+
+.navbar li a{
+  text-decoration: none;
+}
+
+
+
+.pic{
+  height: 300px;
+  float: right;
+  animation: fade-up 0.8s;
+}
+
+h1{
+  color: gold;
+  font-size: 4rem;
+  animation: fade-up 0.8s;
+}
+
+h2{
+  animation: fade-up 0.8s;
+}
+p{
+  animation: fade-up 0.8s;
+  max-width: 50%;
+}
+
+.bt1{
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  border-radius: 2em;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+}
+
+
+.bt2{
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border-radius: 2em;
+  border: 1px solid white;
+  padding: 1em;
+  margin-left: 1em;
+  transition: background-color 0.3s;
+}
+
+.bt2:hover{
+  background-color: gold;
+  color: black;
+  border: none;
+}
+
+.butz{
+  animation: fade-up 0.8s;
+  cursor: pointer;
+}
+
+@keyframes fade-up{
+
+  0%{
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@media (max-width: 628px){
+  .pic{
+    height: 300px;
+  }
+}
+@media (max-width: 508px){
+  .pic{
+    height: 270px;
+  }
+}
+
+
+@media (max-width: 444px){
+  .pic{
+    height: 210px;
+  }
+
+  p{
+    max-width: 80%;
+  }
+
+  
+  .navbar li{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+
+ 
+
+  h1{
+    width: 30%;
+  }
+
+  header{
+    display: block;
+  }
+  .nameL{
+    font-size: 5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width:388px){
+  .pic{
+    height: 200px;
+  }
+}
